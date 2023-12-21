@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        article {
+            background: url("pexels-photo.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 700px;
+            width: 100%;
+            z-index: 0;
+        }
+
+        article::before {
+            content: '';
+            position: absolute;
+            top: 56;
+            left: 0;
+            width: 100%;
+            height: 700px;
+            background: rgba(0, 0, 0, 0.6)
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            z-index: 5;
+        }
+
+        article * {
+            z-index: 5;
+        }
+
+        .fotolar img:hover {
+            opacity: .5;
+            transition: all .6s;
+        }
+
+        .fotolar-item {
+            display: inline-block;
+            width: 22%;
+        }
+
+        .kutucuk-1-2 {
+            display: inline-block;
+            width: 48%;
+            height: 200px;
+        }
+
+        .kutucuk-3 {
+            height: 100px;
+            width: 96.4%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .fotolar-item {
+                display: block;
+                width: 100%;
+            }
+
+            .kutucuk {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <article style="display: block;">
+        <div class="content">
+            <h1 class="display-3 text-white">Welcome to Edurive.com</h1>
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button type="button" class="btn btn-outline-dark text-white">Read More</button>
+        </div>
+        <div class="icerik">
+            <h1 class="display-6 text-dark text-center my-3">Web & Application Development</h1>
+            <p class="text-dark text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+                nostrum dicta, porro nesciunt facilis voluptatem nihil voluptas.</p>
+        </div>
+        <center>
+            <div class="fotolar w-100 bg-secondary p-3">
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+
+                </div>
+                <div class="fotolar-item">
+                    <img src="pexels-photo-593349.jpeg" class="img-fluid rounded m-2">
+                </div>
+            </div>
+        </center>
+
+        <center>
+            <footer class="bg-light my-3">
+                <h1 class="display-6 text-dark text-center">Develop Your Dreams</h1>
+                <p class="mx-4 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ea qui
+                    excepturi. Deleniti excepturi inventore facilis quis suscipit.</p>
+
+                <div class="bg-primary rounded kutucuk kutucuk-1-2">
+                    <h1 class="text-white display-6">Contact Us</h1>
+                    <p class="text-white text-center m-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Temporibus, alias atque. Quo quod nam incidunt commodi veniam quam, corporis animi placeat ipsa
+                        voluptatibus optio temporibus amet inventore cum, nobis ex.</p>
+                    <label class="text-warning">info@gmail com</label>
+                </div>
+                <div class="bg-secondary rounded kutucuk kutucuk-1-2">
+                    <h1 class="text-white display-6">About Us</h1>
+                    <p class="text-white text-center m-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Temporibus, alias atque. Quo quod nam incidunt commodi veniam quam, corporis animi placeat ipsa
+                        voluptatibus optio temporibus amet inventore cum, nobis ex.</p>
+                    <label class="text-warning">info@gmail com</label>
+                </div>
+                <div class="bg-dark rounded m-1 p-3 kutucuk kutucuk-3">
+                    <h5 class="text-white" style=" font-weight: 200;">Develop Your Dreams</h5>
+                    <label class="text-white">Online Courses by <a href="#"
+                            class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Sadık
+                            turan</a></label>
+                </div>
+            </footer>
+        </center>
+    </article>
+
+
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
